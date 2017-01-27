@@ -1,0 +1,40 @@
+[xboxdrv]
+silent = true
+ui-clear = true
+deadzone=4000
+deadzone-trigger = 15%
+#trigger-as-button = true
+
+[ui-buttonmap]
+A=BTN_A
+B=BTN_B
+X=BTN_X
+Y=BTN_Y
+
+START=BTN_START
+GUIDE=BTN_MODE
+BACK=BTN_SELECT
+
+LB=BTN_TL
+RB=BTN_TR
+
+#LT=
+#RT=
+
+TL=BTN_THUMBL
+TR=BTN_THUMBR
+
+[ui-axismap]
+X1=ABS_X
+Y1=ABS_Y
+
+X2=ABS_RX
+Y2=ABS_RY 
+
+LT=ABS_Z
+RT=ABS_RZ
+
+DPAD_X = ABS_HAT0X
+DPAD_Y = ABS_HAT0Y
+
+# EOF #
