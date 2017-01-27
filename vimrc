@@ -44,3 +44,9 @@ highlight clear LineNr "transparent bg for num column
 "highlight clear SignColumn 
 highlight LineNr ctermfg=black
 hi CursorLineNr ctermfg=darkgrey
+
+" Powerline
+set rtp+=/usr/share/powerline/bindings/vim/
+
+" Always show statusline
+set laststatus=2
