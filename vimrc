@@ -1,36 +1,49 @@
-set background=dark
+set nocompatible
+filetype plugin indent on
+filetype plugin on
+set encoding=utf8
+
 syntax enable
 syntax on
-colorscheme molokai
+set syntax=on
 set t_Co=256
 
-set encoding=utf8
-set syntax=on
+set background=dark
+"set background=light
+"highlight Normal ctermfg=grey ctermbg=darkgrey
+colorscheme quantum
 
-set shiftwidth=4
+set wildmenu
+set ignorecase
+
+"TAB
+"set expandtab
+set shiftwidth=2
 set tabstop=2
-set softtabstop=2
+"set softtabstop=2
+"set expandtab "spaces instead of tab
+set ai "auto indent
+"set si "smart indent
 
 set lbr
 set tw=500
-set ai "auto indent
-set si "smart inden
 set wrap "wrap lines 
 
-set laststatus=2
+"set colorcolumn=80 "wrap guide
 
-set expandtab
-set number
-set cursorline
+set laststatus=2
+set linespace=3
+
+set number "line numbers
+set cursorline "highlight cursor line
 filetype indent on
-set wildmenu
 set lazyredraw
 set showmatch
 set incsearch
 set hlsearch
 
 set foldmethod=syntax
-set foldcolumn=1
+set foldcolumn=0
 set foldlevel=2
 set foldenable
 set foldlevelstart=10
@@ -40,13 +53,41 @@ filetype indent on
 
 set autoread
 
+"LINES
 highlight clear LineNr "transparent bg for num column
-"highlight clear SignColumn 
-highlight LineNr ctermfg=black
-hi CursorLineNr ctermfg=darkgrey
+"highlight clear SignColumn
+
+highlight CursorLine ctermbg=234
+
+"highlight SignColumn ctermfg=black
+"color of line numbers
+highlight LineNr ctermfg=236
+"hi CursorLineNr ctermfg=darkgray
+
+"INTENT CHAR GUIDE
+set list lcs=tab:\|\ "indent line
+highlight SpecialKey ctermfg=235
+highlight SpecialKey ctermbg=233
+"hi SpecialKey ctermfg=black
+"hi clear SpecialKey
 
 " Powerline
 set rtp+=/usr/share/powerline/bindings/vim/
 
 " Always show statusline
 set laststatus=2
+
+"
+"COLORS
+"
+
+"MAIN BACKGROUND
+hi Normal ctermbg=233
+
+"highlight Comment ctermfg=darkgrey
+highlight Comment ctermfg=238
+
+"add closing brace and move cursor to left
+inoremap { {}<ESC>ha
+
+"PLUGINS
