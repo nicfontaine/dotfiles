@@ -105,8 +105,20 @@ inoremap { {}<ESC>ha
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-
 let g:airline_theme='laederon'
+
+Plugin 'scrooloose/nerdtree'
+"hotkeys
+map <C-\> :NERDTreeToggle<CR>
+
+Plugin 'severin-lemaignan/vim-minimap'
+"minimap hotkeys
+let g:minimap_show='<leader>ms'
+let g:minimap_update='<leader>mu'
+let g:minimap_close='<leader>gc'
+let g:minimap_toggle='<leader>gt'
+
+let g:minimap_highlight='Visual'
 
 "call vundle#end()            " required
 filetype plugin indent on 
