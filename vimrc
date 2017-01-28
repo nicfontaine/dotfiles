@@ -111,6 +111,8 @@ Plugin 'scrooloose/nerdtree'
 "hotkeys
 map <C-\> :NERDTreeToggle<CR>
 
+Plugin 'kien/ctrlp.vim'
+
 Plugin 'severin-lemaignan/vim-minimap'
 "minimap hotkeys
 let g:minimap_show='<leader>ms'
