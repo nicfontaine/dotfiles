@@ -1,4 +1,15 @@
 set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#rc()
+
+"call vundle#begin()
+" "call vundle#begin('~/some/path/here')
+
+"Plugin 'VundleVim/Vundle.vim'
+Plugin 'Vundle.vim'
+
 filetype plugin indent on
 filetype plugin on
 set encoding=utf8
@@ -72,7 +83,7 @@ highlight SpecialKey ctermbg=233
 "hi clear SpecialKey
 
 " Powerline
-set rtp+=/usr/share/powerline/bindings/vim/
+"set rtp+=/usr/share/powerline/bindings/vim/
 
 " Always show statusline
 set laststatus=2
@@ -91,3 +102,12 @@ highlight Comment ctermfg=238
 inoremap { {}<ESC>ha
 
 "PLUGINS
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+let g:airline_theme='laederon'
+
+"call vundle#end()            " required
+filetype plugin indent on 
+
