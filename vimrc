@@ -95,6 +95,12 @@ set laststatus=2
 noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
 
+"DIRECTION
+noremap n h
+noremap e k
+noremap i j
+noremap o l
+
 "
 "COLORS
 "
