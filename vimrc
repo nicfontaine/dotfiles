@@ -100,7 +100,7 @@ noremap n h
 noremap e k
 noremap i j
 noremap o l
-
+noremap h i
 "
 "COLORS
 "
