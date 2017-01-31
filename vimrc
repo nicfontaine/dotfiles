@@ -89,6 +89,13 @@ highlight SpecialKey ctermbg=233
 set laststatus=2
 
 "
+"REMAP
+"
+
+noremap! <C-BS> <C-w>
+noremap! <C-h> <C-w>
+
+"
 "COLORS
 "
 
@@ -101,7 +108,9 @@ highlight Comment ctermfg=238
 "add closing brace and move cursor to left
 inoremap { {}<ESC>ha
 
+"
 "PLUGINS
+"
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
