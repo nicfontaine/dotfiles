@@ -96,11 +96,11 @@ noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
 
 "DIRECTION
-noremap n h
-noremap e k
-noremap i j
-noremap o l
-noremap h i
+"noremap n h
+"noremap e k
+"noremap i j
+"noremap o l
+"noremap h i
 "
 "COLORS
 "
