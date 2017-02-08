@@ -8,7 +8,7 @@ call vundle#rc()
 " "call vundle#begin('~/some/path/here')
 
 "Plugin 'VundleVim/Vundle.vim'
-Plugin 'Vundle.vim'
+Plugin 'Vundle.vim.git'
 
 filetype plugin indent on
 filetype plugin on
