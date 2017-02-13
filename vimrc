@@ -22,7 +22,6 @@ set t_Co=256
 set background=dark
 "set background=light
 "highlight Normal ctermfg=grey ctermbg=darkgrey
-colorscheme quantum
 
 set wildmenu
 set ignorecase
@@ -106,7 +105,13 @@ noremap! <C-h> <C-w>
 "
 
 "MAIN BACKGROUND
-hi Normal ctermbg=233
+"hi Normal ctermbg=233
+
+colorscheme quantum
+
+hi NonText ctermbg=none
+hi Normal guibg=NONE ctermbg=NONE
+
 
 "highlight Comment ctermfg=darkgrey
 highlight Comment ctermfg=238
