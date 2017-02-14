@@ -18,12 +18,15 @@ if !exists('g:quantum_black')
 endif
 
 if g:quantum_black
+		let s:gray0 = ['#1d1d1d', 233]
     let s:gray1 = ['#212121', 234]
     let s:gray2 = ['#272b2c', 236]
     let s:gray3 = ['#394040', 238]
     let s:gray4 = ['#5e696a', 242]
     let s:gray5 = ['#aeb6b7', 248]
 else
+		let s:gray0 = ['#1d1d1d', 233]
+    let s:gray1 = ['#212121', 234]
     let s:gray1 = ['#263238', 236]
     let s:gray2 = ['#2c3e44', 238]
     let s:gray3 = ['#415a63', 240]
@@ -63,7 +66,7 @@ endfun
 call s:HL('ColorColumn',                    '',         s:gray3,    '')
 call s:HL('Cursor',                         s:gray2,    s:gray5,    '')
 call s:HL('CursorColumn',                   '',         s:gray2,    '')
-call s:HL('CursorLine',                     '',         s:gray2,    'none')
+call s:HL('CursorLine',                     '',         s:gray0,    'none')
 call s:HL('CursorLineNr',                   s:gray2,     s:gray1,    'none')
 call s:HL('Directory',                      s:blue,     '',         '')
 call s:HL('DiffAdd',                        s:green,    s:gray2,    'none')

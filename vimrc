@@ -67,7 +67,7 @@ set autoread
 highlight clear LineNr "transparent bg for num column
 "highlight clear SignColumn
 
-highlight CursorLine ctermbg=234
+highlight CursorLine ctermbg=236 ctermfg=232
 
 "highlight SignColumn ctermfg=black
 "color of line numbers
