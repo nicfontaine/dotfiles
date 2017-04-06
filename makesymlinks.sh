@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/.dotfiles_bak             # old dotfiles backup directory
-files="bashrc vimrc vim Xmodmap xinput-evoluent.sh xb01 xb02 move-next-monitor.sh rofi.config"    # list of files/folders to symlink in homedir
+files="bashrc vimrc vim Xmodmap xstartup xb01 xb02 move-next-monitor.sh rofi.config"    # list of files/folders to symlink in homedir
 
 ##########
 
