@@ -4,11 +4,13 @@
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
 ############################
 
-########## Variables
+# VARS
 
-dir=~/dotfiles                    # dotfiles directory
-olddir=~/.dotfiles_bak             # old dotfiles backup directory
-files="bashrc vimrc vim Xmodmap xstartup xb01 xb02 move-next-monitor.sh rofi.config"    # list of files/folders to symlink in homedir
+dir=~/dotfiles
+olddir=~/.dotfiles_bak
+
+# FILES & DIRS TO SYMLINK IN ~/
+files="zshrc vimrc vim xstartup xb01 xb02 move-next-monitor.sh rofi.config"
 
 ##########
 
@@ -24,8 +26,10 @@ echo "...done"
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
 for file in $files; do
-    echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/.$file ~/.dotfiles_bak/
-    echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
+
+  echo "Moving any existing dotfiles from ~ to $olddir"
+  mv ~/.$file ~/.dotfiles_bak/
+  echo "Creating symlink to $file in home directory."
+  ln -s $dir/$file ~/.$file
+
 done
