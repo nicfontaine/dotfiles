@@ -33,7 +33,8 @@ set tabstop=2
 "set softtabstop=2
 "set expandtab "spaces instead of tab
 set ai "auto indent
-"set si "smart indent
+set si "smart indent
+set breakindent "indent overflow
 
 set lbr
 set tw=500
