@@ -1,15 +1,12 @@
 set nocompatible
 filetype off
 
-set rtp+=$HOME/.vim/bundle/vundle
-let path='$HOME/.vim/bundle'
+set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#rc('$HOME/.vim/bundle')
 
 call vundle#begin()
-" "call vundle#begin('~/some/path/here')
 
 Plugin 'VundleVim/Vundle.vim'
-"Plugin 'Vundle.vim.git'
 
 filetype plugin indent on
 filetype plugin on
@@ -109,7 +106,7 @@ noremap! <C-h> <C-w>
 "MAIN BACKGROUND
 "hi Normal ctermbg=233
 
-colorscheme quantum
+colorscheme molokai
 
 hi NonText ctermbg=none
 hi Normal guibg=NONE ctermbg=NONE
