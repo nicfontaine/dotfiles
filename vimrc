@@ -1,14 +1,14 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#rc()
 
-"call vundle#begin()
+call vundle#begin()
 " "call vundle#begin('~/some/path/here')
 
-"Plugin 'VundleVim/Vundle.vim'
-Plugin 'Vundle.vim.git'
+Plugin 'VundleVim/Vundle.vim'
+"Plugin 'Vundle.vim.git'
 
 filetype plugin indent on
 filetype plugin on
@@ -143,6 +143,6 @@ let g:minimap_toggle='<leader>gt'
 
 let g:minimap_highlight='Visual'
 
-"call vundle#end()            " required
+call vundle#end()            " required
 filetype plugin indent on 
 
