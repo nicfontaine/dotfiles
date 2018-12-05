@@ -1,8 +1,9 @@
 set nocompatible
 filetype off
 
-set rtp+=$HOME/.vim/bundle/Vundle.vim
-call vundle#rc()
+set rtp+=$HOME/.vim/bundle/vundle
+let path='$HOME/.vim/bundle'
+call vundle#rc('$HOME/.vim/bundle')
 
 call vundle#begin()
 " "call vundle#begin('~/some/path/here')

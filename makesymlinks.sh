@@ -10,7 +10,7 @@ dir=~/dotfiles
 olddir=~/.dotfiles_bak
 
 # FILES & DIRS TO SYMLINK IN ~/
-files="zshrc vimrc vim xstartup move-next-monitor.sh rofi.config Xmodmap dunstrc"
+files="zshrc vimrc xstartup move-next-monitor.sh rofi.config Xmodmap dunstrc"
 
 ##########
 
