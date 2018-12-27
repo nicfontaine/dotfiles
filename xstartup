@@ -1,17 +1,35 @@
 #!/bin/sh
 
-# BUTTON MAPPING FOR EVOLUENT MOUSE
-# MIDDLE CLICK IN SCROLL WHEEL, NOTHING ON THIRD FINGER
-#btn1, btn2, btn3, scrollup, scrolldown, nothing, nothing, thumbtop, middleclick, thumbdown
-#xinput set-button-map "Kingsis Peripherals Evoluent VerticalMouse 4" 1 3 2 4 5 6 7 8 2 2
+############
+### MICE ###
+############
+
+# Evoluent
+# --- M-Click on scroll-wheel & bottom thumb. Nothing on 3rd button
+# --- l-click, r-click, 3rd-click, scroll-up, scroll-dn, #, #, thumb-t, scroll-click, thumbdown
 xinput set-button-map "Kingsis Peripherals Evoluent VerticalMouse 4" 1 3 0 4 5 6 7 8 2 2
 #xinput set-button-map "Logitech USB Trackball" 1 2 3 4 5 6 7 9
 
-# KEYBOARD REPEAT
+# Mionix NAOS
+# --- Map front thumb to M-click. Back thumb not able to remap??
+# --- l-click, scroll-click, r-click, scroll-up, scroll-dn, #, #, thumb-f, thumb-b, #, #, # 
+xinput set-button-map "La-VIEW Technology Mionix NAOS 7000" 1 2 3 4 5 6 7 2 9 10 11 12
+
+################
+### KEYBOARD ###
+################
+
+# Keyboard - General
+# --- Repeat rate increase
 xset r rate 250 25
 
-# WACOM
-# Map to L monitor
+###################
+### PERIPHERALS ###
+###################
+
+# Wacom
+
+# Desc: Map pen & eraser to left monitor, & force proportions
 # Pen
 xsetwacom set 9 MapToOutput HEAD-0
 # Eraser
