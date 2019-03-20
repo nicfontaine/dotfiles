@@ -5,10 +5,35 @@
 ############
 
 # Evoluent
+# 1 l-click
+# 2 r-click
+# 3 m-click
+# 4 scroll-up
+# 5 scroll-dn
+# 6 ?
+# 7 ?
+# 8 thumb-t       (enter)
+# 9 scroll-click  (m-click)
+# 10 thumb-b      (m-click)
 # --- M-Click on scroll-wheel & bottom thumb. Nothing on 3rd button
 # --- l-click, r-click, 3rd-click, scroll-up, scroll-dn, #, #, thumb-t, scroll-click, thumbdown
 xinput set-button-map "Kingsis Peripherals Evoluent VerticalMouse 4" 1 3 0 4 5 6 7 8 2 2
 #xinput set-button-map "Logitech USB Trackball" 1 2 3 4 5 6 7 9
+
+# Elecom Huge
+# 1 L
+# 2 scroll-click  (m-click)
+# 3 R             (m-click)
+# 4 scroll-up
+# 5 scroll-dn
+# 6 ?
+# 7 ?
+# 8 rarr          (r-click)
+# 9 larr          (l-click)
+# 10 Fn1          (?)
+# 11 Fn2          (?)
+# 12 Fn3          (r-click)
+xinput set-button-map 14  1 2 2 4 5 6 7 3 1 10 11 3
 
 # Mionix NAOS
 # --- Map front thumb to M-click. Back thumb not able to remap??
