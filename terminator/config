@@ -1,0 +1,85 @@
+[global_config]
+  inactive_color_offset = 0.878048780488
+  suppress_multiple_term_dialog = True
+  tab_position = hidden
+  title_font = Source Code Variable Semi-Bold 9
+  title_hide_sizetext = True
+  title_inactive_bg_color = "#2e3436"
+  title_inactive_fg_color = "#babdb6"
+  title_transmit_bg_color = "#2e3436"
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 1fac2685-bee9-4dcc-8c71-0d8e3b9cf4a7
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 1310:0
+      size = 1250, 1440
+      title = nic@yuki:~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 720
+      ratio = 0.5
+      type = VPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 1fac2685-bee9-4dcc-8c71-0d8e3b9cf4a7
+    [[[terminal3]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 5c062eda-2916-4db9-bb31-e0aca811378b
+  [[grid-01]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 1fac2685-bee9-4dcc-8c71-0d8e3b9cf4a7
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 2720:99
+      size = 1186, 1178
+      title = nic@yuki:~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 589
+      ratio = 0.5
+      type = VPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 1fac2685-bee9-4dcc-8c71-0d8e3b9cf4a7
+    [[[terminal3]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 5c062eda-2916-4db9-bb31-e0aca811378b
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.94
+    background_type = transparent
+    cursor_color = "#b35760"
+    cursor_color_fg = False
+    font = Source Code Variable 11
+    palette = "#292929:#454545:#be5a64:#73373d:#644ab4:#409863:#2d8598:#929292:#383838:#666666:#bc525e:#723d42:#907dcb:#58a677:#4c98aa:#aeaeae"
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False

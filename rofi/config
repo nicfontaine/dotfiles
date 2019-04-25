@@ -23,20 +23,47 @@
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
+! rofi.color-enabled: true
+! rofi.color-window: #273238, #273238, #1e2529
+! rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
+! rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
+! rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
+
+! +++++++++++++++++++++++++++++++++++++++++
+! +          Rofi color theme             +
+! +++++++++++++++++++++++++++++++++++++++++
+
 rofi.color-enabled: true
-rofi.color-window: #273238, #273238, #1e2529
-rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
-rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
-rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
+
+! Window:           'background',  'border', 'separator'
+rofi.color-window: argb:dd000000,  #44BE5A64, argb:17ffffff
+
+! State:              'bg',       'fg',   'altbg',        'hlbg',         hlfg
+rofi.color-normal: argb:00252936, #ccffffff, argb:00252936, argb:FFBC525E, #FFFFFFFF
+rofi.color-active: argb:00252936, #FFBE5A64, argb:00252936, argb:FFBC525E, #ffc000
+rofi.color-urgent: argb:00252936, #ff0000, argb:00252936, argb:00252936, #ff0000
+
+rofi.width: 25
+rofi.padding: 400
+! rofi.line-margin: 4
+rofi.lines: 5
+rofi.separator-style: none
+rofi.columns: 1
+rofi.font: Source Code Variable Regular 13
+! rofi.bw: 0
+! rofi.eh: 2
+rofi.hide-scrollbar: true
+rofi.auto-select: true
+!rofi.display-drun:⚌
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
-rofi.color-enabled: true
-rofi.color-window: #0a0c0f, argb:02a373d, #141414
-rofi.color-normal: argb:0121212, #c4c4c4, argb:0eee8d5, argb:4e586e75, #ffffff
-rofi.color-active: argb:39c473fd, #e4e4e4, argb:0eee8d5, argb:3926bdd2, #e4e4e4
-rofi.color-urgent: argb:0fdf6e3, argb:c7dc2fb9, argb:0eee8d5, argb:0dc322f, #e4e4e4
+! rofi.color-enabled: true
+! rofi.color-window: #0a0c0f, argb:02a373d, #141414
+! rofi.color-normal: argb:0121212, #c4c4c4, argb:0eee8d5, argb:4e586e75, #ffffff
+! rofi.color-active: argb:39c473fd, #e4e4e4, argb:0eee8d5, argb:3926bdd2, #e4e4e4
+! rofi.color-urgent: argb:0fdf6e3, argb:c7dc2fb9, argb:0eee8d5, argb:0dc322f, #e4e4e4
 
 ! "Border width" Set from: Default
 ! rofi.bw:                             1

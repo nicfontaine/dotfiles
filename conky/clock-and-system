@@ -1,0 +1,69 @@
+use_xft yes
+xftfont 123:size=15
+xftalpha 0.1
+update_interval 1
+total_run_times 0
+double_buffer yes
+
+own_window yes
+own_window_type normal
+own_window_transparent yes
+own_window_argb_visual yes
+own_window_argb_value 145  # semi-transparent
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_colour 000000
+
+alignment top_left
+gap_x 4558
+gap_y 80
+#minimum_size 250 5
+maximum_width 400
+
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color white
+default_shade_color red
+default_outline_color green
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 1
+override_utf8_locale yes
+use_spacer yes
+
+color1 4D2529 #dark
+color2 C26971 #light
+color3 73373D #darkmed
+color4 ED959E #lighter
+
+TEXT
+${offset -20}${color A35058}${font Noto Sans Mono:pixelsize=140}${time %H:%M}
+${font Noto Sans Mono Bold:pixelsize=20}${voffset -155}${color1}${time %B %d}, ${time %Y}  $alignr${color2}${time %A}
+
+# SYSTEM
+#${voffset 7}${font Noto Sans Bold:pixelsize=18,weight=bold}${color1}SYSTEM $alignr $nodename
+# ${voffset 6}${font Noto Sans:pixelsize=16}${color2}$sysname $kernel $alignr $uptime
+# ${font Noto Sans:pixelsize=18}${color2}Uptime: $alignr $uptime
+${voffset 8}${font Noto Sans:pixelsize=17}Volume
+# $alignr${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6}
+${color3}${execbar amixer get 'Master',0 | egrep -o '[0-9]{1,3}%'}
+
+# CPU
+${color1}${font Noto Sans:pixelsize=18,weight=bold}CPU ${alignr}${cpu cpu0}%
+# ${color B35760} ${cpubar cpu0 5,}
+${font Noto Sans:pixelsize=16}${voffset 6}${color2}${top name 1} $alignr ${top cpu 1}%
+${top name 2} $alignr ${top cpu 2}%
+${top name 3} $alignr ${top cpu 3}%
+${top name 4} $alignr ${top cpu 4}%
+# ${top name 5} $alignr ${top cpu 5}%
+
+# RAM
+${color 4D2529}${font Noto Sans:pixelsize=18,weight=bold}RAM${alignr}${mem}
+# ${membar 5,}
+${font Noto Sans:pixelsize=16}${voffset 6}${color2}${top_mem name 1} $alignr ${top_mem mem_res 1}
+${top_mem name 2} $alignr ${top_mem mem_res 2}
+${top_mem name 3} $alignr ${top_mem mem_res 3}
+${top_mem name 4} $alignr ${top_mem mem_res 4}
+# ${top_mem name 5} $alignr ${top_mem mem_res 5}

@@ -18,7 +18,7 @@
 #  9 scroll-click  (m-click)
 # 10 thumb-b       (m-click)
 
-xinput set-button-map "Kingsis Peripherals Evoluent VerticalMouse 4" 1 3 0 4 5 6 7 8 2 2
+# xinput set-button-map "Kingsis Peripherals Evoluent VerticalMouse 4" 1 3 0 4 5 6 7 8 2 2
 
 
 # Elecom Huge
@@ -37,7 +37,24 @@ xinput set-button-map "Kingsis Peripherals Evoluent VerticalMouse 4" 1 3 0 4 5 6
 # 11 Fn2             (?)
 # 12 Fn3             (r-click)
 
-xinput set-button-map 14  1 2 2 4 5 2 7 3 1 10 11 3
+# xinput set-button-map 15  1 2 2 4 5 2 7 3 1 10 11 3
+# xinput set-button-map "ELECOM TrackBall Mouse HUGE TrackBall" 1 2 2 4 5 2 7 3 1 10 11 3
+
+if [ "$SEARCH" = "ELECOM TrackBall Mouse HUGE TrackBall" ]; then 
+    exit 1
+fi
+
+ids=$(xinput --list | awk -v search="$SEARCH" \
+    '$0 ~ search {match($0, /id=[0-9]+/);\
+                  if (RSTART) \
+                    print substr($0, RSTART+3, RLENGTH-3)\
+                 }'\
+     )
+
+for i in $ids
+do
+	xinput set-button-map $i  1 2 2 4 5 2 7 3 1 10 11 3
+done
 
 # Mionix NAOS
 # --- Map front thumb to M-click. Back thumb not able to remap??
@@ -77,8 +94,8 @@ xset r rate 200 25
 # --- Map pen & eraser to left monitor, & force proportions
 
 # Pen 
-xsetwacom set 12 MapToOutput HEAD-0
-# Force proportions
-xsetwacom set 12 Area 0 0 31496 17716
+# xsetwacom set 12 MapToOutput HEAD-0
 # Eraser
-xsetwacom set 21 MapToOutput HEAD-0
+# xsetwacom set 22 MapToOutput HEAD-0
+# Force proportions
+# xsetwacom set 12 Area 0 0 31496 17716
