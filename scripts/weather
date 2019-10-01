@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+location="37.7455508,-122.41273609999999"
+units=ca
+url="https://api.darksky.net/forecast/dbaea0571d2f157dc23070da8e56d77a/${location}?units=${units}&exclude=minutely,hourly,daily,alerts,flags"
+
+api_response=$(curl -s "${url}")
+
+temperature=$(echo "${api_response}" | jq '.currently.temperature' | xargs printf '%.*f\n' 0)
+weather_icon=$(echo "${api_response}" | jq '.currently.icon')
+summary=$(echo "${api_response}" | jq '.currently.summary' | tr -d '"')
+
+case "${weather_icon}" in
+  '"clear-day"')
+    icon=""
+    ;;
+  '"clear-night"')
+    icon=""
+    ;;
+  '"rain"')
+    icon=""
+    ;;
+  '"snow"')
+    icon=""
+    ;;
+  '"sleet"')
+    icon=""
+    ;;
+  '"wind"')
+    icon=""
+    ;;
+  '"fog"')
+    icon=""
+    ;;
+  '"cloudy"')
+    icon=""
+    ;;
+  '"partly-cloudy-day"')
+    icon=""
+    ;;
+  '"partly-cloudy-night"')
+    icon=""
+    ;;
+esac
+
+
+# farenheight= echo "2 k 9 5 / $temperature * 32 + p" | dc
+echo -n "%{F#01AB84}${icon}%{F-} ${summary}  %{F#01AB84}%{F-} ${temperature} °C"

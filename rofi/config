@@ -1,34 +1,3 @@
-! "Enabled modi" Set from: Default
-! rofi.modi:                           window,run,ssh
-! "Window opacity" Set from: Default
- rofi.opacity:                       96 
-! "Window width" Set from: Default
- rofi.width:                          24
-! "Number of lines" Set from: Default
- rofi.lines:                          6
-! "Number of columns" Set from: Default
-! rofi.columns:                        1
-! "Font to use" Set from: Default
-! rofi.font:                           mono 12
-! "Color scheme for normal row" Set from: Default
-! rofi.color-normal:                   #fdf6e3,#002b36,#eee8d5,#586e75,#eee8d5
-!rofi.color-normal:                     #e3e5e8, #112e30, #586e75, #3e4042, #586e75
-! "Color scheme for urgent row" Set from: Default
-! rofi.color-urgent:                   #fdf6e3,#dc322f,#eee8d5,#dc322f,#fdf6e3
-! "Color scheme for active row" Set from: Default
-! rofi.color-active:                   #fdf6e3,#268bd2,#eee8d5,#268bd2,#fdf6e3
-! "Color scheme window" Set from: Default
-! rofi.color-window:                   #fdf6e3,#002b36
-
-! ------------------------------------------------------------------------------
-! ROFI Color theme
-! ------------------------------------------------------------------------------
-! rofi.color-enabled: true
-! rofi.color-window: #273238, #273238, #1e2529
-! rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
-! rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
-! rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
-
 ! +++++++++++++++++++++++++++++++++++++++++
 ! +          Rofi color theme             +
 ! +++++++++++++++++++++++++++++++++++++++++
@@ -43,43 +12,27 @@ rofi.color-normal: argb:00252936, #ccffffff, argb:00252936, argb:FFBC525E, #FFFF
 rofi.color-active: argb:00252936, #FFBE5A64, argb:00252936, argb:FFBC525E, #ffc000
 rofi.color-urgent: argb:00252936, #ff0000, argb:00252936, argb:00252936, #ff0000
 
-rofi.width: 25
-rofi.padding: 400
-! rofi.line-margin: 4
+rofi.width: 30
+rofi.padding: 9
 rofi.lines: 5
 rofi.separator-style: none
 rofi.columns: 1
 rofi.font: Source Code Variable Regular 13
-! rofi.bw: 0
-! rofi.eh: 2
+rofi.bw: 2   // Border width
+rofi.eh: 1   // Row height
 rofi.hide-scrollbar: true
-rofi.auto-select: true
+!rofi.auto-select: true
 !rofi.display-drun:⚌
 
-! ------------------------------------------------------------------------------
-! ROFI Color theme
-! ------------------------------------------------------------------------------
-! rofi.color-enabled: true
-! rofi.color-window: #0a0c0f, argb:02a373d, #141414
-! rofi.color-normal: argb:0121212, #c4c4c4, argb:0eee8d5, argb:4e586e75, #ffffff
-! rofi.color-active: argb:39c473fd, #e4e4e4, argb:0eee8d5, argb:3926bdd2, #e4e4e4
-! rofi.color-urgent: argb:0fdf6e3, argb:c7dc2fb9, argb:0eee8d5, argb:0dc322f, #e4e4e4
+rofi.location:                      0
+rofi.yoffset:                       0
+! rofi.xoffset:                       -169
 
-! "Border width" Set from: Default
-! rofi.bw:                             1
-! "Location on screen" Set from: Default
- rofi.location:                       0
-! "Padding" Set from: Default
- rofi.padding:                        9
-! "Y-offset relative to location" Set from: Default
- rofi.yoffset:                       0
-! "X-offset relative to location" Set from: Default
- rofi.xoffset:                       0
 ! "Always show number of lines" Set from: Default
 ! rofi.fixed-num-lines:                false
 ! "Terminal to use" Set from: Default
 ! rofi.terminal:                       rofi-sensible-terminal
-rofi.terminal:                         "terminator"
+! rofi.terminal:                         "terminator"
 ! "Ssh client to use" Set from: Default
 ! rofi.ssh-client:                     ssh
 ! "Ssh command to execute" Set from: Default
@@ -93,7 +46,7 @@ rofi.terminal:                         "terminator"
 ! "Command executed on accep-entry-custom for window modus" Set from: Default
 ! rofi.window-command:                 xkill -id {window}
 ! "Disable history in run/ssh" Set from: Default
-! rofi.disable-history:                false
+rofi.disable-history:                true
 ! "Use levenshtein sorting" Set from: Default
 ! rofi.levenshtein-sort:               false
 ! "Set case-sensitivity" Set from: Default
@@ -101,13 +54,13 @@ rofi.terminal:                         "terminator"
 ! "Cycle through the results list" Set from: Default
 ! rofi.cycle:                          true
 ! "Enable sidebar-mode" Set from: Default
-! rofi.sidebar-mode:                   false
+! rofi.sidebar-mode:                   true
 ! "Row height (in chars)" Set from: Default
 ! rofi.eh:                             1
 ! "Enable auto select mode" Set from: Default
 ! rofi.auto-select:                    false
 ! "Parse hosts file for ssh mode" Set from: Default
-! rofi.parse-hosts:                    false
+! rofi.parse-hosts:                    true
 ! "Parse known_hosts file for ssh mode" Set from: Default
 ! rofi.parse-known-hosts:              true
 ! "Set the modi to combine in combi mode" Set from: Default

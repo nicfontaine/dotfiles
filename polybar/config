@@ -1,0 +1,124 @@
+[colors]
+background = #0F0F0F
+background-alt = #444
+foreground = #dddddd
+foreground-alt = #555
+primary = #AE81FF
+secondary = #5C96CC
+alert = #01AB84
+
+[bar/main]
+monitor = ${env:MONITOR:DVI-D-0}
+width = 100%
+height = 40
+radius = 0.0
+fixed-center = true
+dpi = 210
+background = ${colors.background}
+foreground = ${colors.foreground}
+line-size = 0
+line-color = #f00
+border-size = 0
+border-color = #01AB84
+padding-left = 0
+padding-right = 1
+module-margin-left = 0
+module-margin-right = 0
+
+# font-0 = Noto Sans:size=4;2
+# font-1 = Noto Sans:style=Italic:size=4;2
+# font-2 = Noto Mono:style=Regular:size=4;2
+# font-3 = Noto Sans:style=Bold Italic:size=4;2
+# font-4 = Noto Sans:style=Bold:size=4;2
+
+font-0 = "Noto Sans:pixelsize=4.5;2"
+font-1 = "FontAwesome5Free:style=regular:size=5;4"
+
+modules-left = spacer spotify-artist separator spotify-title
+modules-center = weather bar separator pulseaudio
+modules-right = 
+
+tray-padding = 2
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/bar]
+type = custom/script
+exec = /home/nic/dotfiles/scripts/bar.sh
+tail = true
+interval = 1
+
+[module/separator]
+type = custom/text
+content = "     %{F#404040}|%{F-}     "
+
+[module/spacer]
+type = custom/text
+content = "       "
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+strip-wsnumbers = true
+label-mode = %mode%
+label-mode-padding = 1
+label-mode-foreground = #000
+label-mode-background = ${colors.primary}
+label-focused = %index%
+label-focused-background = ${colors.background}
+label-focused-foreground = #01AB84
+label-focused-padding = 1
+label-unfocused = %index%
+label-unfocused-foreground = #FFFFFF
+label-unfocused-padding = 1
+label-visible = %index%
+label-visible-background = ${self.label-focused-background}
+label-visible-padding = ${self.label-focused-padding}
+label-urgent = %index%
+label-urgent-background = ${colors.alert}
+label-urgent-foreground = ${colors.background}
+label-urgent-padding = 1
+
+[module/spotify-artist]
+type = custom/script
+exec = /home/nic/dotfiles/scripts/spotify/artist.sh
+tail = true
+interval = 5
+
+[module/spotify-title]
+type = custom/script
+exec = /home/nic/dotfiles/scripts/spotify/title.sh
+tail = true
+interval = 5
+
+[module/pulseaudio]
+type = internal/pulseaudio
+interval = 5
+use-ui-max = false
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%%
+label-volume-foreground = ${root.foreground}
+format-muted-foreground = #01AB84
+label-muted = 
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-foreground = #01AB84
+ramp-headphones-0 = 
+ramp-headphones-foreground = #01AB84
+
+[module/weather]
+type = custom/script
+exec = /home/nic/dotfiles/scripts/weather
+interval = 900
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 5
+margin-bottom = 0
+
+; vim:ft=dosini

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+switch="$1"
+user=$(whoami)
+
+case "$switch" in
+  enable|-e)
+    xrandr --output HDMI1 --above eDP1 --auto
+    /home/${user}/.fehbg
+    pkill dunst
+    ;;
+  disable|-d)
+    xrandr --output HDMI1 --off
+    /home/${user}/.fehbg
+    pkill dunst
+    ;;
+  *)
+    echo "Invalid option. Exiting."
+    ;;
+esac
