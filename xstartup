@@ -20,7 +20,7 @@
 # 11 Fn2             (?)
 # 12 Fn3             (r-click)
 
-xinput set-button-map 18  1 2 2 4 5 2 7 3 1 10 11 3
+xinput set-button-map 14  1 2 2 4 5 2 7 3 1 10 11 3
 # xinput set-button-map "ELECOM TrackBall Mouse HUGE TrackBall" 1 2 2 4 5 2 7 3 1 10 11 3
 
 # if [ "$SEARCH" = "ELECOM TrackBall Mouse HUGE TrackBall" ]; then 
