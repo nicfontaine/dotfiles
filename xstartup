@@ -1,7 +1,7 @@
 #!/bin/sh
 
 redshift -x
-redshift -l 37:-122 -t 5000:3300 -o
+redshift -l 37:-122 -t 5200:3400 -o
 
 ############
 ### MICE ###
@@ -9,7 +9,6 @@ redshift -l 37:-122 -t 5000:3300 -o
 
 # Elecom Huge
 # --- R and M click on right side. and L and R click above scroll wheel. No small Fn
-
 #  1 L
 #  2 scroll-click-m  (m-click)
 #  3 R               (m-click)
@@ -44,7 +43,6 @@ xinput set-button-map 10  1 2 2 4 5 2 7 3 1 10 11 3
 
 # Evoluent
 # --- M-Click on scroll-wheel & bottom thumb. Nothing on 3rd button
-
 #  1 l-click
 #  2 r-click
 #  3 m-click
@@ -61,19 +59,6 @@ xinput set-button-map "Kingsis Peripherals Evoluent VerticalMouse 4" 1 3 0 4 5 6
 
 # Mionix NAOS
 # --- Map front thumb to M-click. Back thumb not able to remap??
-
-#  1 l-click
-#  2 scroll-click
-#  3 r-click
-#  4 scroll-up
-#  5 scroll-dn
-#  6 ?
-#  7 ?
-#  8 thumb-fr      (m-click)
-#  9 thumb-bk
-# 10 ?
-# 11 ?
-# 12 ?
 # xinput set-button-map "La-VIEW Technology Mionix NAOS 7000" 1 2 3 4 5 6 7 2 9 10 11 12
 
 
@@ -97,10 +82,11 @@ xmodmap -e "remove Lock = Caps_Lock"
 
 # Wacom
 # --- Map pen & eraser to left monitor, & force proportions
+# xrandr to list
 
 # Pen 
-xsetwacom set 17 MapToOutput DisplayPort-0
+xsetwacom set 10 MapToOutput DisplayPort-1
 # Eraser
-xsetwacom set 18 MapToOutput DisplayPort-0
+xsetwacom set 11 MapToOutput DisplayPort-1
 # Force proportions
-xsetwacom set 17 Area 0 0 31496 17716
+xsetwacom set 11 Area 0 0 31496 17716
