@@ -1,9 +1,9 @@
 #!/bin/sh
 
 redshift -x
-redshift -l 37:-122 -t 5200:3400 -o
+# redshift -l 37:-122 -t 5200:3400 -o
 
-ID_ELEC=11
+ID_ELEC=10
 STR_EVOL="Kingsis Peripherals Evoluent VerticalMouse 4"
 STR_NAOS="La-VIEW Technology Mionix NAOS 7000"
 

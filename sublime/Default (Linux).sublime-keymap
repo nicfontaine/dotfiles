@@ -1,0 +1,18 @@
+[
+  { "keys": ["ctrl+shift+t"], "command": "open_terminal_project_folder" },
+  { "keys": ["ctrl+tab"], "command": "next_view" },
+  { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+  { "keys": ["ctrl+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+  { "keys": ["ctrl+\\"],
+  	"command": "multicommand",
+  	"args": {
+  		"commands": [
+  			{"command": "toggle_side_bar"},
+  			{"command": "toggle_minimap"},
+  			{"command": "toggle_tabs"}
+  		]
+  	}
+  },
+  { "keys": ["ctrl+shift+o"], "command": "prompt_open_folder" },
+  { "keys": ["ctrl+alt+shift+s"], "command": "save_all" }
+]
