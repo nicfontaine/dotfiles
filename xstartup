@@ -3,11 +3,11 @@
 redshift -x
 # redshift -l 37:-122 -t 5200:3400 -o
 
-ID_ELEC=10
+ID_ELEC=16
 STR_EVOL="Kingsis Peripherals Evoluent VerticalMouse 4"
 STR_NAOS="La-VIEW Technology Mionix NAOS 7000"
-ID_WAC_PEN=17
-ID_WAC_ERS=18
+ID_WAC_PEN=29
+ID_WAC_ERS=30
 
 ############
 ### MICE ###
@@ -90,8 +90,8 @@ xset r rate 200 25
 # xrandr to list
 
 # Pen 
-xsetwacom set $ID_WAC_PEN MapToOutput DisplayPort-2
+xsetwacom set $ID_WAC_PEN MapToOutput DisplayPort-0
 # Eraser
-xsetwacom set $ID_WAC_ERS MapToOutput DisplayPort-2
+xsetwacom set $ID_WAC_ERS MapToOutput DisplayPort-0
 # Force proportions
 xsetwacom set $ID_WAC_PEN Area 0 0 31496 17716
