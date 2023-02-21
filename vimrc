@@ -66,7 +66,7 @@ set autoread
 highlight clear LineNr "transparent bg for num column
 "highlight clear SignColumn
 
-highlight CursorLine ctermbg=236 ctermfg=232
+" highlight CursorLine ctermbg=236 ctermfg=232
 
 "highlight SignColumn ctermfg=black
 "color of line numbers
@@ -106,14 +106,16 @@ noremap! <C-h> <C-w>
 "MAIN BACKGROUND
 "hi Normal ctermbg=233
 
-colorscheme molokai
+"colorscheme molokai
+" colorscheme everblush
+colorscheme papercolor
 
 hi NonText ctermbg=none
 hi Normal guibg=NONE ctermbg=NONE
 
 
 "highlight Comment ctermfg=darkgrey
-highlight Comment ctermfg=238
+" highlight Comment ctermfg=238
 
 "add closing brace and move cursor to left
 inoremap { {}<ESC>ha
@@ -121,10 +123,9 @@ inoremap { {}<ESC>ha
 "
 "PLUGINS
 "
-
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-let g:airline_theme='laederon'
+" let g:airline_theme='laederon'
 
 Plugin 'scrooloose/nerdtree'
 "hotkeys
