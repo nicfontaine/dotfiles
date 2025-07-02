@@ -1,0 +1,35 @@
+[
+  {
+    "use_key_equivalents": true,
+    "context": "Editor",
+    "bindings": {
+      "ctrl-up": [
+        "editor::ScrollUpByLines",
+        {
+          "lines": 1
+        }
+      ],
+      "ctrl-down": [
+        "editor::ScrollDownByLines",
+        {
+          "lines": 1
+        }
+      ]
+    }
+  },
+  {
+    "use_key_equivalents": true,
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-up": "editor::MoveLineUp",
+      "ctrl-shift-down": "editor::MoveLineDown"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-tab": "pane::ActivateNextItem",
+      "ctrl-shift-tab": "pane::ActivatePreviousItem"
+    }
+  }
+]
