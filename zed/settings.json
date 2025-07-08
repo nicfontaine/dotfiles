@@ -15,7 +15,8 @@
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "source.fixAll.prettier": true
+    "source.fixAll.prettier": true,
+    "source.removeUnusedImports": true
   },
   "soft_wrap": "editor_width",
   "format_on_save": "on",
@@ -55,7 +56,10 @@
     "TypeScript": {
       "formatter": "prettier",
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
+        "source.removeUnusedImports": true,
+        "source.organizeImports": true,
+        "source.sortImports": true
       },
       "format_on_save": {
         "external": {
@@ -70,14 +74,20 @@
     "TSX": {
       "formatter": "prettier",
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
+        "source.removeUnusedImports": true,
+        "source.organizeImports": true,
+        "source.sortImports": true
       },
       "format_on_save": "on"
     },
     "JavaScript": {
       "formatter": "prettier",
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
+        "source.removeUnusedImports": true,
+        "source.organizeImports": true,
+        "source.sortImports": true
       },
       "format_on_save": "on"
     }

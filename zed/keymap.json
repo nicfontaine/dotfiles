@@ -4,13 +4,13 @@
     "context": "Editor",
     "bindings": {
       "ctrl-up": [
-        "editor::ScrollUpByLines",
+        "editor::MoveUpByLines",
         {
           "lines": 1
         }
       ],
       "ctrl-down": [
-        "editor::ScrollDownByLines",
+        "editor::MoveDownByLines",
         {
           "lines": 1
         }
